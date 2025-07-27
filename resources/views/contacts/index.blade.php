@@ -4,27 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de Contatos</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-        /* Define a fonte padrão para o corpo */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        /* Estiliza os títulos e textos para um visual mais moderno */
-        .card, .table {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-
-        /* Estiliza a navbar para um visual mais moderno */
-        .navbar {
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -48,11 +30,9 @@
             <a href="{{ route('contacts.create') }}" class="btn btn-primary"> Adicionar Contato <i class="bi bi-plus-circle"></i></a>
         </div>
 
-        @if(session('success'))
-            <div class="alert alert-success">
-                {{ session('success') }}
-            </div>
-        @endif
+        <div class="mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar por nome, e-mail, etc...">
+        </div>
 
         <table class="table table-striped table-hover align-middle">
             <thead class="table-dark">
@@ -87,5 +67,15 @@
             </tbody>
         </table>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (session('success'))
+    <script>
+        window.notification = {
+            type: 'success',
+            message: '{{ session('success') }}'
+        };
+    </script>
+@endif
 </body>
 </html>
