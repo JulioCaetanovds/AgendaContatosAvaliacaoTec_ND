@@ -1,5 +1,6 @@
 # Agenda de Contatos - Avaliação Técnica Notre Dame
 
+Este projeto é uma aplicação web desenvolvida como parte do processo seletivo para a vaga de Desenvolvedor de Sistemas II na Congregação de Nossa Senhora. A aplicação consiste em um CRUD (Create, Read, Update, Delete) completo para gerenciar uma agenda de contatos, com foco em boas práticas e uma experiência de usuário moderna.
 
 ## Tecnologias Utilizadas
 
@@ -12,18 +13,19 @@
 
 ## Funcionalidades Implementadas
 
--   **Página Inicial (Home):** Uma página de apresentação com acesso ao módulo da agenda.
--   **Create:** Formulário para criação de novos contatos.
--   **Read:** Listagem de todos os contatos em uma tabela.
--   **Read:** Página de detalhes para cada contato individual.
--   **Update:** Formulário para edição de contatos existentes.
--   **Delete:** Exclusão de contatos com diálogo de confirmação.
--   **Validações e Mensagens:** Todas as validações de formulário possuem mensagens de erro claras e em português (pt-BR).
--   **Seeders:** População inicial do banco de dados com dados de teste utilizando o Faker.
--   **UI/UX Aprimorada:** Para a melhor experiência do usuário
--   **Notificações 'Toast':** Feedbacks de sucesso utilizando SweetAlert2, de forma não intrusiva.
--   **Busca Dinâmica:** Filtragem em tempo real da tabela de contatos.
--   **Design Moderno:** Interface com ícones, tipografia aprimorada e layout responsivo.
+-   [x] **Página Inicial (Home):** Uma página de apresentação com acesso ao módulo da agenda.
+-   [x] **CRUD Completo:**
+    -   [x] **Create:** Formulário para criação de novos contatos.
+    -   [x] **Read (Listar):** Listagem de todos os contatos em uma tabela.
+    -   [x] **Read (Visualizar):** Página de detalhes para cada contato individual.
+    -   [x] **Update:** Formulário para edição de contatos existentes.
+    -   [x] **Delete:** Exclusão de contatos com diálogo de confirmação.
+-   [x] **Validações e Mensagens:** Todas as validações de formulário possuem mensagens de erro claras e em português (pt-BR).
+-   [x] **Seeders:** População inicial do banco de dados com dados de teste utilizando o Faker.
+-   [x] **UI/UX Aprimorada:**
+    -   [x] **Notificações 'Toast':** Feedbacks de sucesso utilizando SweetAlert2, de forma não intrusiva.
+    -   [x] **Busca Dinâmica:** Filtragem em tempo real da tabela de contatos.
+    -   [x] **Design Moderno:** Interface com ícones, tipografia aprimorada e layout responsivo.
 
 ---
 
