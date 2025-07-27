@@ -17,11 +17,11 @@ class ContactFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'phone' => fake()->phoneNumber(),
-            'email' => fake()->unique()->safeEmail(),
-            'city_state' => fake()->city() . '/' . fake()->stateAbbr(),
-            'category' => fake()->randomElement(['Aluno', 'Responsável', 'Professor', 'Funcionário', 'Gestor']),
-        ];
+        'name' => fake()->name(),
+        'phone' => fake()->phoneNumber(),
+        'email' => fake()->unique()->safeEmail(),
+        'city_state' => fake()->city() . '/' . fake()->stateAbbr(),
+        'category' => fake()->randomElement(['Aluno', 'Responsável', 'Professor', 'Funcionário', 'Gestor']),
+    ];
     }
 }
