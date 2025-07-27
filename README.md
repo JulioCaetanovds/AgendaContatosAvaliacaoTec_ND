@@ -53,12 +53,12 @@ Antes de começar, garanta que você tenha os seguintes softwares instalados em 
 
 1.  **Clone o Repositório**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO_GIT] agenda-contatos-nd
+    git clone [URL_DO_SEU_REPOSITORIO_GIT] AgendaContatosAvaliacaoTec_ND
     ```
 
 2.  **Acesse a Pasta do Projeto**
     ```bash
-    cd agenda-contatos-nd
+    cd AgendaContatosAvaliacaoTec_ND
     ```
 
 3.  **Instale as Dependências**
