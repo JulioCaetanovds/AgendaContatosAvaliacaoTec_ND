@@ -51,6 +51,7 @@ Antes de começar, garanta que você tenha os seguintes softwares instalados:
 * [Node.js & NPM](https://nodejs.org/) (versão LTS recomendada)
 * [MySQL](https://www.mysql.com/) (ou um servidor de banco de dados compatível)
 * [Git](https://git-scm.com/)
+* **Nota:** Garanta que extensões comuns do PHP, como `fileinfo`, `mbstring`, `openssl`, `pdo_mysql` e **`zip`**, estejam ativadas no seu arquivo `php.ini`.
 
 ### Passo a Passo
 
