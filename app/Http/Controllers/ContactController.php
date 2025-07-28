@@ -10,10 +10,19 @@ class ContactController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        // buscar contatos
-        $contacts = \App\Models\Contact::all();
+        $query = \App\Models\Contact::query();
+
+        $allowedFields = ['name', 'email', 'phone', 'city_state', 'category'];
+        $searchField = $request->input('search_field');
+        $searchTerm = $request->input('search_term');
+
+        if ($searchTerm && in_array($searchField, $allowedFields)) {
+            $query->where($searchField, 'like', '%' . $searchTerm . '%');
+        }
+
+        $contacts = $query->orderBy('name', 'asc')->paginate(7)->withQueryString();
 
         return view('contacts.index', ['contacts' => $contacts]);
     }

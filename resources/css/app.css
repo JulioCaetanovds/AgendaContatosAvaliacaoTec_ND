@@ -3,6 +3,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .card, .table {
@@ -11,4 +14,8 @@ body {
 
 .navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    flex-grow: 1;
 }
